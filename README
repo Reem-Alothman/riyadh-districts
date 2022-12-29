@@ -1,0 +1,59 @@
+
+
+The assignment is to implement web services (two endpoints) using Go language. The endpoints will be accessible at /hai/ and /haicounter/ paths using GET method in http protocol.
+
+
+The database contains a sample list of hai details (neighborhoods) in Saudi Arabia.
+
+1. /hai/ endpoint accepts any of the three parameters (id  - hai - city) and return hai data in JSON format. string parameters (hai-city) may contain part or full expected string, and you have to search the database for a possible list of matches.
+
+
+Usage examples: 
+
+- 127.0.0.1:3333/hai/?id=4
+
+sample Expected result:
+{
+  "result": [
+    {
+      "id": 4,
+      "city": "الرياض",
+      "haiName": "العزيزية"
+    }
+  ]
+}
+
+- 127.0.0.1:3333/hai/?hai=م
+sample expected result: all hais that contains the م letter
+
+- 127.0.0.1:3333/hai/?hai=العارض&city=الرياض
+{
+  "result": [
+    {
+      "id": 9,
+      "city": "الرياض",
+      "haiName": "العارض"
+    }
+  ]
+}
+
+
+2. /haicounter/ endpoint returns list of cities and number of hais in each city. 
+
+Usage example: 
+
+- 127.0.0.1:3333/hailist/
+
+sample Expected result:
+{
+  "result": [
+    {
+      "city": "الرياض",
+      "haicounter": "185"
+    }, ... etc (complete list of cities)
+  ]
+}
+
+
+
+
