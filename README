@@ -1,6 +1,6 @@
 
 
-The assignment is to implement web services (two endpoints) using Go language. The endpoints will be accessible at /hai/ and /haicounter/ paths using GET method in http protocol.
+The project is to implement web services (two endpoints) using Go language. The endpoints will be accessible at /hai/ and /haicounter/ paths using GET method in http protocol.
 
 
 The database contains a sample list of hai details (neighborhoods) in Saudi Arabia.
