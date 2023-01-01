@@ -1,11 +1,11 @@
 
 
-The project is to implement web services (two endpoints) using Go language. The endpoints will be accessible at /hai/ and /haicounter/ paths using GET method in http protocol.
+This project intended to implement web services (two endpoints) using Go language. The endpoints will be accessible at /hai/ and /haicounter/ paths using GET method in http protocol.
 
 
 The database contains a sample list of hai details (neighborhoods) in Saudi Arabia.
 
-1. /hai/ endpoint accepts any of the three parameters (id  - hai - city) and return hai data in JSON format. string parameters (hai-city) may contain part or full expected string, and you have to search the database for a possible list of matches.
+1. /hai/ endpoint accepts any of the three parameters (id  - hai - city) and return hai data in JSON format. string parameters (hai-city) may contain part or full expected string.
 
 
 Usage examples: 
